@@ -22,8 +22,13 @@ class Player {
     textSize(20);
     fill("white");
     text("Player", 280, 40);
-
-    // crie a vida em forma de retângulo
+// crie a vida em forma de retângulo
+    fill(this.life1);
+    rect(width 210, 50, 70, 30);
+    fill(this.life2);
+    rect(width 280, 50, 70, 30);
+    fill(this.life3);
+    rect(width 350, 50, 70, 30);
     pop();
   }
 
