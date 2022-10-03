@@ -62,7 +62,8 @@ function draw() {
 
   //exibir a imagem de fundo
   
-
+  backgroundImg.display
+  
   Engine.update(engine);
 
   // Título
@@ -96,7 +97,7 @@ for (var i = 0; i < computerArrows.length; i++) {
 
 
 //Chame as funções para detectar a colisão para o jogador e o computador
-
+ if (arrow.isTouching(player,computer)
 }
 
 function keyPressed() {
@@ -170,9 +171,16 @@ function handleComputerArcher() {
 
 function handlePlayerArrowCollision() {
 // Escreva o código para detectar a colisão entre a flecha do jogador e do oponente
+  if (playerArrows.isTouching(computerArrows){
+   playerArrows.collide(computerArrows)
+ }    
+      
 }
 
 function handleComputerArrowCollision() {
   //Escreva o código para detectar a colisão entre a flecha do computador e do oponente
+  if (computersArrows.isTouching(playerArrows){
+    computersArrows.collide(playerArrows)
+  }
 }
 
